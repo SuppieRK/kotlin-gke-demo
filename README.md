@@ -263,6 +263,11 @@ The forwarding rule will disappear when the load balancer is deleted.
 gcloud container clusters delete demo-cluster
 ```
 
+- Delete your Docker image
+```shell script
+gcloud container images delete gcr.io/${PROJECT_ID}/demo --force-delete-tags
+```
+
 ### Deleting the project
 
 Alternately, you can delete the project in its entirety. To do so using the gcloud tool, run:
